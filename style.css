@@ -1,0 +1,97 @@
+
+body,html{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #fff;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+
+
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #333;
+	text-align: center;
+	-webkit-user-select: none;
+}
+#indicator{
+	position: relative;
+	top: -15px;
+	left: 0px;
+	background-color: rgba(255,255,255,0.6);
+	width: 30px;
+	height: 2px;
+	margin-bottom: -7px;
+	transition: all 0.3s ease-in-out;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 15px;
+	padding: 10px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 10px;
+}
+
+.active{
+	background-color: rgba(255,255,255,0.2);
+}
+#viewport{
+	height: calc(100% - 110px);
+	margin-top: 105px;
+	overflow: hidden;
+}
+#sections{
+	display: flex;
+	height: 100%;
+
+	width: calc(100%*7);
+}
+#sections div{
+	width: 100%;
+	height: calc(100% - 110px);
+	overflow-y: auto;
+}
+
+#about{height: 900px}
+#portfolio{height: 1500px;}
+#anothersection{height: 500px;}
+#contact{height: 1600px;}
+#another{height: 1000px; background-color: rgba(255,0,0,0.1)}
+#tacos{height: 1000px;		background: url(http://www.deltaco.com/images/turkey/turkey-tacos.png) ;	background-size: 10%;}
+
+
+h2{
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 5px
+}
+#stickyfooter{
+	display: none;
+	position: fixed;
+	text-align: center;
+	padding: 10px;
+	line-height: 55px;
+	font-size: 8px;
+	text-transform: uppercase;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 30px;
+	background: rgba(255,255,255,0);
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 55%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(55%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 55%, rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 55%, rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 55%, rgba(255,255,255,1) 100%); background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 55%, rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+}
+
+
